@@ -369,6 +369,25 @@
   }
   .project-link:hover { gap: 10px; }
 
+  /* ── LEADERSHIP ── */
+  .leadership-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+  }
+  .leadership-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 8px; padding: 28px;
+    transition: all 0.2s;
+  }
+  .leadership-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .leadership-role {
+    font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1rem;
+    color: var(--white); margin-bottom: 8px;
+  }
+  .leadership-desc {
+    font-size: 0.88rem; color: var(--text); line-height: 1.65; opacity: 0.85;
+  }
+
   /* ── CONTACT ── */
   #contact { background: var(--bg2); }
   .contact-inner {
@@ -451,6 +470,7 @@
     <li><a href="#skills">skills</a></li>
     <li><a href="#certifications">certs</a></li>
     <li><a href="#projects">projects</a></li>
+    <li><a href="#leadership">leadership</a></li>
     <li><a href="#contact">contact</a></li>
   </ul>
 </nav>
@@ -472,7 +492,7 @@
   <div class="hero-subtitle fade-in delay-1" style="margin-top:20px;">Building pipelines that scale. Frameworks that last.</div>
   <p class="hero-desc fade-in delay-2">
     Associate Data Engineer at PwC — delivering production-grade ETL systems and cloud data pipelines 
-    across 5 client engagements. I don't just build data flows; I architect frameworks that entire teams adopt.
+    across 6 client engagements. I don't just build data flows; I architect frameworks that entire teams adopt.
   </p>
   <div class="hero-ctas fade-in delay-3">
     <a href="mailto:taahams@gmail.com" class="btn btn-primary">↗ Get in touch</a>
@@ -487,7 +507,7 @@
     </div>
     <div class="stat-divider"></div>
     <div class="stat">
-      <span class="stat-num">5</span>
+      <span class="stat-num">6</span>
       <span class="stat-label">Client engagements</span>
     </div>
     <div class="stat-divider"></div>
@@ -497,7 +517,7 @@
     </div>
     <div class="stat-divider"></div>
     <div class="stat">
-      <span class="stat-num">4<span>×</span></span>
+      <span class="stat-num">5<span>×</span></span>
       <span class="stat-label">Azure certified</span>
     </div>
     <div class="stat-divider"></div>
@@ -525,43 +545,43 @@
         </div>
         <div class="exp-content">
           <div class="exp-role">Associate Data Engineer</div>
-          <div class="exp-type">Full-time · 5 client engagements</div>
+          <div class="exp-type">Full-time · 6 client engagements</div>
 
           <div class="engagement">
-            <div class="engagement-title">AXA · Insurance — ETL Framework · Python / Databricks / SQL</div>
+            <div class="engagement-title">AXA · Insurance — Bronze-to-Silver ETL Platform · Python / Databricks / SQL</div>
             <ul class="engagement-bullets">
-              <li>Sole designer of a <span class="highlight">config-driven Medallion Architecture ETL framework (v13)</span> — validated on <span class="highlight">20+ data objects with 100% accurate results</span>, infinitely scalable with zero code changes per new object.</li>
-              <li>Full <span class="highlight">SCD 0/1/2/6</span> suite with MD5 hash-based CDC, SHA-256 PII hashing, multi-source joins, regex cleansing, 11-operator filtering — all Excel-config-driven.</li>
-              <li><span class="highlight">Adopted by 4–5 teams</span>; currently extending to Delta Lake Silver layer with data lineage and optimal partitioning.</li>
+              <li>Sole designer of a <span class="highlight">config-driven Medallion Architecture ETL framework</span> — processed <span class="highlight">20+ data object types with 100% accuracy</span>, zero code changes per new object; <span class="highlight">adopted by 4–5 teams</span>, cutting per-object onboarding from weeks to hours.</li>
+              <li>Implemented full <span class="highlight">SCD suite (Types 0/1/2/6)</span> with MD5 hash-based Change Data Capture and a structured <span class="highlight">Data Quality Framework</span> (audit trails, anomaly tracking, per-run statistics) — eliminating manual QA effort across all 20+ objects.</li>
+              <li>Built a flexible transformation engine with SHA-256 PII hashing, multi-source joins, regex cleansing, and 11-operator WHERE filtering — all config-driven via Excel, extending to <span class="highlight">Delta Lake / Data Lakehouse</span> with data lineage and optimal partitioning.</li>
             </ul>
           </div>
 
           <div class="engagement">
             <div class="engagement-title">Inpex · Energy (Japan) — RTR & JV Objects · SAP BODS / S/4HANA</div>
             <ul class="engagement-bullets">
-              <li>Sole owner of <span class="highlight">10–20 complex RTR and JV data objects</span> end-to-end: design, BODS flows, mappings, execution, quality validation.</li>
+              <li>Independently designed and delivered <span class="highlight">15+ complex BODS ETL jobs</span> for RTR and Joint Venture objects — authored transformation flows, data mappings, and quality validation end-to-end; <span class="highlight">zero defects post-delivery</span> on all objects.</li>
             </ul>
           </div>
 
           <div class="engagement">
             <div class="engagement-title">Spectrum Brands · Consumer Goods — Customer Master · SAP BODS</div>
             <ul class="engagement-bullets">
-              <li>Independently managed <span class="highlight">10–15 customer master objects</span> across the full lifecycle — design to validated load.</li>
+              <li>Delivered <span class="highlight">10–15 customer master objects</span> — full lifecycle ownership from object design to validated load across complex cross-border SAP migrations.</li>
             </ul>
           </div>
 
           <div class="engagement">
-            <div class="engagement-title">IVL · Chemicals (Belgium) — RTR Objects · SAP BODS</div>
+            <div class="engagement-title">IVL Chemicals · Belgium & China — RTR Objects · SAP BODS</div>
             <ul class="engagement-bullets">
-              <li>Delivered 10–15 RTR objects and BODS transformations for a cross-border SAP migration; established data quality practices adopted across all subsequent engagements.</li>
+              <li>Delivered <span class="highlight">10–15 RTR objects</span> across two cross-border subsidiary integrations — managed BODS transformations, data mappings, and quality validation for both European and Asian entities, ensuring seamless migration and <span class="highlight">99.8% data integrity</span>.</li>
             </ul>
           </div>
 
           <div class="engagement">
             <div class="engagement-title">Therapak · Pharma — RTR & Python Automation · Merger Project</div>
             <ul class="engagement-bullets">
-              <li>First PwC resource on-site — built the delivery chapter from scratch for a merger-driven SAP consolidation.</li>
-              <li>Python automation cut processing time by <span class="highlight">90% (~2 days → under 2 hours)</span> while maintaining <span class="highlight">99.8% data accuracy</span>.</li>
+              <li>First PwC resource on-site — built Python automation for a merger-driven SAP consolidation.</li>
+              <li>Reduced migration time by <span class="highlight">90% (2 days → under 2 hours)</span> with <span class="highlight">99.8% data accuracy</span>, saving 130+ manual hours per migration cycle.</li>
             </ul>
           </div>
         </div>
@@ -594,7 +614,7 @@
           <div class="exp-location">Remote, India</div>
         </div>
         <div class="exp-content">
-          <div class="exp-role">Cybersecurity Engineering Intern</div>
+          <div class="exp-role">Security Intern</div>
           <div class="exp-type">Virtual Internship · 1 month</div>
           <div class="engagement">
             <div class="engagement-title">Security Assessment & Research</div>
@@ -621,8 +641,9 @@
         <div class="skill-tags">
           <span class="tag">Python</span><span class="tag">pandas</span><span class="tag">PySpark</span>
           <span class="tag">Apache Spark</span><span class="tag">Databricks</span><span class="tag">Delta Lake</span>
-          <span class="tag">ETL / ELT</span><span class="tag">Medallion Architecture</span>
-          <span class="tag">SCD 0/1/2/6</span><span class="tag">MD5 CDC</span><span class="tag">Data Warehousing</span>
+          <span class="tag">Data Lakehouse</span><span class="tag">ETL / ELT</span><span class="tag">Medallion Architecture</span>
+          <span class="tag">SCD 0/1/2/6</span><span class="tag">MD5 CDC</span><span class="tag">Data Quality Framework</span>
+          <span class="tag">Data Modeling</span>
         </div>
       </div>
       <div class="skill-card reveal">
@@ -653,12 +674,11 @@
         </div>
       </div>
       <div class="skill-card reveal">
-        <div class="skill-icon">📡</div>
-        <div class="skill-cat">Currently Learning</div>
+        <div class="skill-icon">🧰</div>
+        <div class="skill-cat">Orchestration & Platforms</div>
         <div class="skill-tags">
-          <span class="tag">Apache Kafka</span><span class="tag">Spark Optimisation</span>
-          <span class="tag">dbt</span><span class="tag">Docker</span>
-          <span class="tag">Palantir Foundry</span><span class="tag">Microsoft Fabric</span>
+          <span class="tag">Apache Airflow</span><span class="tag">Apache Kafka</span>
+          <span class="tag">Docker</span><span class="tag">Git</span><span class="tag">CI/CD</span>
         </div>
       </div>
       <div class="skill-card reveal">
@@ -678,12 +698,17 @@
 <section id="certifications">
   <div class="section-wrap">
     <div class="section-label reveal">Certifications</div>
-    <h2 class="reveal">Microsoft Azure <em>certified 4×.</em></h2>
+    <h2 class="reveal">Microsoft Azure <em>certified 5×.</em></h2>
     <div class="cert-grid">
       <div class="cert-card reveal">
         <div class="cert-badge">DP-203</div>
         <div class="cert-name">Azure Data Engineer Associate</div>
         <div class="cert-issuer">Microsoft · Oct 2024</div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-badge">DP-600</div>
+        <div class="cert-name">Fabric Analytics Engineer Associate</div>
+        <div class="cert-issuer">Microsoft · Nov 2024</div>
       </div>
       <div class="cert-card reveal">
         <div class="cert-badge">AZ-204</div>
@@ -762,6 +787,24 @@
         </div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP -->
+<section id="leadership">
+  <div class="section-wrap">
+    <div class="section-label reveal">Leadership & Volunteering</div>
+    <h2 class="reveal">Beyond the <em>day job.</em></h2>
+    <div class="leadership-grid">
+      <div class="leadership-card reveal">
+        <div class="leadership-role">CodeIIEST Cybersecurity Chapter Lead</div>
+        <div class="leadership-desc">Organized 10+ workshops and CTF events for 700+ participants across institutions — drove technical security education at scale.</div>
+      </div>
+      <div class="leadership-card reveal">
+        <div class="leadership-role">PwC CSR Group</div>
+        <div class="leadership-desc">Mentored underprivileged students in digital literacy and inclusion.</div>
+      </div>
     </div>
   </div>
 </section>
